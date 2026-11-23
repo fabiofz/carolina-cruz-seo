@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: carolina-cruz
+    runtime: static
+    buildCommand: test -s dist/index.html
+    staticPublishPath: ./dist
