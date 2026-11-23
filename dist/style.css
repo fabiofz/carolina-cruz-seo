@@ -102,3 +102,20 @@ summary { color: var(--caramel-dark); font-weight: 800; cursor: pointer; width: 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+.portfolio { border-top: 1px solid var(--rule); }
+.portfolio-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.portfolio-grid .portfolio-label { color: var(--caramel-dark); font-size: .92rem; margin-bottom: .5rem; }
+.portfolio-links { margin: .85rem 0 0; padding-inline-start: 1.15rem; color: var(--caramel-dark); }
+.portfolio-links li + li { margin-top: .3rem; }
+.portfolio-sample { display: block; width: 100%; height: auto; margin-top: 1rem; border: 1px solid var(--rule); border-radius: .48rem; }
+.portfolio-collections { margin-top: 1.65rem; border-bottom: 1px solid var(--rule); }
+.portfolio-collection { padding-block: .85rem; border-top: 1px solid var(--rule); }
+.portfolio-collection summary { padding-block: .2rem; }
+.portfolio-collection .portfolio-grid { margin: .85rem 0 .35rem; }
+@media (max-width: 850px) {
+  .portfolio-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+  .site-header nav { flex-wrap: wrap; gap: .35rem .95rem; }
+  .portfolio-grid { grid-template-columns: minmax(0, 1fr); }
+}
